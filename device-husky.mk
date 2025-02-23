@@ -78,6 +78,9 @@ include device/google/gs-common/touch/stm/stm20.mk
 include device/google/gs-common/touch/gti/gti.mk
 include device/google/gs-common/touch/touchinspector/touchinspector.mk
 
+# Do not include ROM side face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := false
+
 # Init files
 PRODUCT_COPY_FILES += \
 	device/google/shusky/conf/init.husky.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.husky.rc
